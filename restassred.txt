@@ -1,0 +1,24 @@
+Request method:	GET
+Request URI:	http://127.0.0.1:5000/hello
+Proxy:			http://localhost:8888
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		header1=value2
+				Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.0 200 OK
+Content-Type: text/html; charset=utf-8
+Content-Length: 29
+Server: Werkzeug/0.12.2 Python/2.7.10
+Date: Tue, 12 Sep 2017 11:56:13 GMT
+Proxy-Connection: Close
+
+<html>
+  <body>
+    <h1>只接受post请求!</h1>
+  </body>
+</html>
