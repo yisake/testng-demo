@@ -13,6 +13,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 
+@Test(groups="test4")
 public class TestCase {
 
 	@Test(groups="test1")
@@ -33,7 +34,7 @@ public class TestCase {
 		System.out.println("##test3");
 		PrintStream fileOutPutStream = new PrintStream(new File("./restassred.txt"));
 		given().
-			proxy("localhost", 8888).
+			//proxy("localhost", 8888).
 			header("header1", "value1").
 			header("header1", "value2").
 			config(RestAssured.config().logConfig(new LogConfig().defaultStream(fileOutPutStream))).
@@ -45,7 +46,5 @@ public class TestCase {
 			log().all().
 			assertThat().statusCode(200).
 			assertThat();
-	}
-	
-	
+	}	
 }
