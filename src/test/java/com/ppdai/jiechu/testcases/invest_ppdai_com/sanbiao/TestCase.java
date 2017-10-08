@@ -1,4 +1,4 @@
-package com.ppdai.jiechu.testcases;
+package com.ppdai.jiechu.testcases.invest_ppdai_com.sanbiao;
 
 import org.testng.annotations.Test;
 
@@ -32,6 +32,7 @@ public class TestCase {
 	public void test3 () throws FileNotFoundException {
 		System.out.println(Thread.currentThread().getId());
 		System.out.println("##test3");
+		/*
 		PrintStream fileOutPutStream = new PrintStream(new File("./restassred.txt"));
 		given().
 			//proxy("localhost", 8888).
@@ -46,5 +47,6 @@ public class TestCase {
 			log().all().
 			assertThat().statusCode(200).
 			assertThat();
+		*/
 	}	
 }
